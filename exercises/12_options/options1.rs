@@ -11,7 +11,7 @@ fn maybe_icecream(time_of_day: u16) -> Option<u16> {
     // value of 0. The Option output should gracefully handle cases where
     // time_of_day > 23.
     match time_of_day {
-        1..=21 => Some(5),
+        0..=21 => Some(5),
         22..=24 => Some(0),
         _ => None,
     }
